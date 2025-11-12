@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Science-Based Fitness - Ascend Coaching</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .faq-header {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(26, 26, 26, 0.9));
+            padding: 120px 0 60px;
+            text-align: center;
+            color: var(--text-light);
+        }
+        .faq-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .faq-section {
+            margin-bottom: 3rem;
+        }
+        .faq-section h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+        .faq-item {
+            background: var(--text-light);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+        .faq-question {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active .faq-question::after {
+            content: '−';
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            color: var(--text-gray);
+            line-height: 1.8;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+            padding-top: 1rem;
+        }
+        .faq-answer p {
+            margin-bottom: 1rem;
+        }
+        .faq-answer ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        .faq-answer li {
+            margin-bottom: 0.5rem;
+        }
+        .intro-section {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+        }
+        .intro-section p {
+            color: var(--text-gray);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Ascend Coaching</div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#training">Training Programs</a></li>
+                <li><a href="index.html#nutrition">Nutrition</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- FAQ Header -->
+    <section class="faq-header">
+        <div class="container">
+            <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 1rem;">Frequently Asked Questions</h1>
+            <p style="font-size: 1.2rem; opacity: 0.9;">Science-based answers to common fitness questions</p>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="faq-content">
+        <div class="container">
+            <div class="intro-section">
+                <p>
+                    In the fitness world, there are countless debates, myths, and conflicting information. At Ascend Coaching, we base our recommendations on scientific evidence, peer-reviewed research, and proven methodologies. This FAQ addresses common questions and debates within science-based fitness communities, helping you navigate the noise and focus on what actually works.
+                </p>
+            </div>
+
+            <!-- Training Questions -->
+            <div class="faq-section">
+                <h2>Training & Programming</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">What's the best training split: PPL, Upper/Lower, or Full Body?</div>
+                    <div class="faq-answer">
+                        <p><strong>The answer: It depends on your experience level, schedule, and goals.</strong></p>
+                        <p>The science shows that training frequency and volume matter more than the specific split. Here's what research tells us:</p>
+                        <ul>
+                            <li><strong>Beginners:</strong> Full body or upper/lower splits work best, allowing 2-3x per week frequency per muscle group</li>
+                            <li><strong>Intermediate:</strong> Upper/lower or PPL splits (3-6x per week) allow for more volume and specialization</li>
+                            <li><strong>Advanced:</strong> Any split can work if volume, intensity, and recovery are properly managed</li>
+                        </ul>
+                        <p>The key is hitting each muscle group 2-3x per week with adequate volume (10-20 sets per muscle group per week) and progressive overload. The split is just a tool to organize your training.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How many sets per muscle group per week is optimal?</div>
+                    <div class="faq-answer">
+                        <p>Research from Dr. Mike Israetel and others suggests:</p>
+                        <ul>
+                            <li><strong>Beginners:</strong> 10-12 sets per muscle group per week</li>
+                            <li><strong>Intermediate:</strong> 12-18 sets per muscle group per week</li>
+                            <li><strong>Advanced:</strong> 18-22+ sets per muscle group per week (with proper recovery)</li>
+                        </ul>
+                        <p>These are general guidelines. Individual response varies based on genetics, recovery capacity, training age, and other factors. The key is progressive overload - gradually increasing volume, intensity, or frequency over time.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Is progressive overload the only way to build muscle?</div>
+                    <div class="faq-answer">
+                        <p><strong>Progressive overload is the primary driver, but not the only factor.</strong></p>
+                        <p>Muscle growth requires:</p>
+                        <ul>
+                            <li><strong>Mechanical tension:</strong> Progressive overload (more weight, reps, or sets over time)</li>
+                            <li><strong>Metabolic stress:</strong> The "pump" and fatigue from training</li>
+                            <li><strong>Muscle damage:</strong> Controlled damage that triggers repair and growth</li>
+                        </ul>
+                        <p>While progressive overload is essential, you can achieve it through various methods: increasing weight, reps, sets, training frequency, or reducing rest times. The method matters less than the consistent progression.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do I need to train to failure for maximum gains?</div>
+                    <div class="faq-answer">
+                        <p><strong>The science: Training close to failure (1-3 reps in reserve) is effective, but training to absolute failure isn't necessary for most sets.</strong></p>
+                        <p>Research shows:</p>
+                        <ul>
+                            <li>Training to 1-3 RIR (reps in reserve) provides similar hypertrophy to training to failure</li>
+                            <li>Training to failure increases fatigue and may limit volume in subsequent sets</li>
+                            <li>Occasional failure training can be useful, but constant failure training may hinder recovery</li>
+                        </ul>
+                        <p>Most science-based coaches recommend leaving 1-3 reps in the tank on most sets, with occasional failure sets for intensity techniques.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nutrition Questions -->
+            <div class="faq-section">
+                <h2>Nutrition & Diet</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">How much protein do I really need for muscle growth?</div>
+                    <div class="faq-answer">
+                        <p><strong>The consensus: 0.7-1.0g per pound of bodyweight (1.6-2.2g per kg) is optimal for most people.</strong></p>
+                        <p>Research consistently shows:</p>
+                        <ul>
+                            <li>Higher protein intake (up to 1g/lb) supports muscle growth and recovery</li>
+                            <li>Protein timing matters less than total daily intake</li>
+                            <li>Spreading protein across 3-4 meals (20-40g per meal) may optimize muscle protein synthesis</li>
+                            <li>Going above 1g/lb provides minimal additional benefits for most people</li>
+                        </ul>
+                        <p>For cutting phases, higher protein (up to 1.2g/lb) helps preserve muscle mass. For bulking, 0.7-0.9g/lb is typically sufficient.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do I need to eat every 2-3 hours to maintain muscle?</div>
+                    <div class="faq-answer">
+                        <p><strong>No. Meal timing frequency has minimal impact on muscle growth for most people.</strong></p>
+                        <p>The science shows:</p>
+                        <ul>
+                            <li>Total daily protein intake matters far more than meal frequency</li>
+                            <li>Muscle protein synthesis stays elevated for 3-5 hours after a protein meal</li>
+                            <li>Eating 3-6 meals per day works fine - choose what fits your lifestyle</li>
+                            <li>Intermittent fasting can work for muscle building if protein intake is adequate</li>
+                        </ul>
+                        <p>Focus on hitting your daily protein and calorie targets. Meal timing is a tool for convenience and adherence, not a requirement for growth.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Are carbs necessary for muscle growth, or can I go low-carb?</div>
+                    <div class="faq-answer">
+                        <p><strong>Carbs aren't strictly necessary, but they're highly beneficial for performance and recovery.</strong></p>
+                        <p>Here's what the research shows:</p>
+                        <ul>
+                            <li>Carbs replenish muscle glycogen, improving training performance</li>
+                            <li>Better training performance = more volume = more growth potential</li>
+                            <li>Carbs can spare protein from being used for energy</li>
+                            <li>Low-carb diets can work, but may limit training intensity and volume</li>
+                        </ul>
+                        <p>For most people, moderate to high carbs (2-4g per pound of bodyweight) support better training and recovery. Low-carb can work, but you may need to accept slightly lower training performance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Supplement Questions -->
+            <div class="faq-section">
+                <h2>Supplements & Science</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Which supplements actually work, and which are just marketing?</div>
+                    <div class="faq-answer">
+                        <p><strong>Evidence-based supplements with strong research support:</strong></p>
+                        <ul>
+                            <li><strong>Creatine:</strong> Most researched supplement, proven to increase strength and muscle mass</li>
+                            <li><strong>Protein powder:</strong> Convenient way to hit protein targets (not magic, just convenient)</li>
+                            <li><strong>Caffeine:</strong> Proven performance enhancer</li>
+                            <li><strong>Beta-Alanine:</strong> Effective for high-rep, high-intensity training</li>
+                            <li><strong>Citrulline Malate:</strong> May improve performance and blood flow</li>
+                        </ul>
+                        <p><strong>Supplements with weak or mixed evidence:</strong></p>
+                        <ul>
+                            <li>BCAAs (if you eat enough protein, they're redundant)</li>
+                            <li>Most "testosterone boosters" (minimal evidence, often overhyped)</li>
+                            <li>Fat burners (caffeine works, but most ingredients are ineffective)</li>
+                        </ul>
+                        <p>Remember: Supplements supplement your training and nutrition. They don't replace the fundamentals.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do "testosterone boosters" actually work?</div>
+                    <div class="faq-answer">
+                        <p><strong>The honest answer: Most have minimal to no effect on testosterone levels in healthy individuals.</strong></p>
+                        <p>Here's what the science says:</p>
+                        <ul>
+                            <li>Most "test boosters" show small, often insignificant increases in testosterone</li>
+                            <li>These increases rarely translate to meaningful muscle or strength gains</li>
+                            <li>Some ingredients (like D-Aspartic Acid, Tongkat Ali) may have small effects, but results are inconsistent</li>
+                            <li>If you have clinically low testosterone, see a doctor - supplements won't fix that</li>
+                        </ul>
+                        <p>Focus on the basics: adequate sleep, stress management, proper nutrition, and consistent training. These have far more impact on hormone health than most supplements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community Debates -->
+            <div class="faq-section">
+                <h2>Common Debates in Fitness Communities</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">High volume vs. low volume training - which is better?</div>
+                    <div class="faq-answer">
+                        <p><strong>Both can work, but optimal volume depends on individual factors.</strong></p>
+                        <p>The debate:</p>
+                        <ul>
+                            <li><strong>High volume advocates:</strong> More sets = more growth stimulus</li>
+                            <li><strong>Low volume advocates:</strong> Quality over quantity, less is more</li>
+                        </ul>
+                        <p><strong>The science:</strong> There's a dose-response relationship - more volume generally means more growth, up to a point. However:</p>
+                        <ul>
+                            <li>Recovery capacity varies by individual</li>
+                            <li>Training age matters (beginners need less volume)</li>
+                            <li>There's a point of diminishing returns</li>
+                            <li>Optimal volume is individual and changes over time</li>
+                        </ul>
+                        <p>Start with moderate volume (12-15 sets per muscle group per week) and adjust based on recovery and progress. More isn't always better, but adequate volume is essential.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Is "bro-splits" (one muscle group per day) effective?</div>
+                    <div class="faq-answer">
+                        <p><strong>Bro-splits can work, but they're often suboptimal for most people.</strong></p>
+                        <p>The issue with traditional bro-splits:</p>
+                        <ul>
+                            <li>Each muscle group is trained only once per week</li>
+                            <li>Research shows 2-3x per week frequency is generally better for hypertrophy</li>
+                            <li>You're leaving gains on the table with lower frequency</li>
+                        </ul>
+                        <p><strong>However:</strong> If a bro-split allows you to train with higher volume per session and you enjoy it, it can still work. The best program is one you'll stick to consistently.</p>
+                        <p>For most people, upper/lower or PPL splits (hitting each muscle 2x per week) are more time-efficient and effective.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Should I bulk or cut first? What's the science-based approach?</div>
+                    <div class="faq-answer">
+                        <p><strong>It depends on your current body composition and goals.</strong></p>
+                        <p><strong>General guidelines:</strong></p>
+                        <ul>
+                            <li><strong>If you're overweight (20%+ body fat for men, 30%+ for women):</strong> Cut first to improve insulin sensitivity and health markers</li>
+                            <li><strong>If you're underweight or very lean:</strong> Bulk first to build muscle mass</li>
+                            <li><strong>If you're in the middle (12-18% body fat for men, 20-28% for women):</strong> Either can work, but a small surplus (lean bulk) is often preferred</li>
+                        </ul>
+                        <p><strong>The science:</strong> You can build muscle in a slight deficit if you're new to training or returning after a break. However, a small surplus (200-500 calories) generally supports better muscle growth for most people.</p>
+                        <p>Most science-based coaches recommend shorter cycles (8-16 weeks) of bulking and cutting rather than year-long phases.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What's the deal with "muscle confusion" and changing programs frequently?</div>
+                    <div class="faq-answer">
+                        <p><strong>Muscle confusion is largely a myth. Progressive overload is what drives growth.</strong></p>
+                        <p>The concept: Constantly changing exercises confuses muscles, forcing adaptation.</p>
+                        <p><strong>The reality:</strong> Research shows:</p>
+                        <ul>
+                            <li>Consistency and progressive overload matter more than exercise variety</li>
+                            <li>Muscles adapt to progressive overload, not "confusion"</li>
+                            <li>Too much variety can prevent progressive overload (hard to track progress)</li>
+                            <li>Some exercise variation is good, but not constant change</li>
+                        </ul>
+                        <p><strong>Best practice:</strong> Stick with a program for 8-16 weeks, focus on progressive overload, then make strategic changes (not random ones) when progress stalls.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Philosophy -->
+            <div class="faq-section">
+                <h2>Science-Based Fitness Philosophy</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">Why do we focus on science-based approaches?</div>
+                    <div class="faq-answer">
+                        <p><strong>Because evidence beats anecdotes, and results matter more than opinions.</strong></p>
+                        <p>Science-based fitness means:</p>
+                        <ul>
+                            <li>Basing recommendations on peer-reviewed research, not bro-science or marketing</li>
+                            <li>Understanding that individual responses vary, but general principles apply</li>
+                            <li>Being honest about what we know vs. what we don't know</li>
+                            <li>Focusing on what works for most people, most of the time</li>
+                            <li>Being open to new evidence and changing recommendations when better data emerges</li>
+                        </ul>
+                        <p>This doesn't mean we ignore experience or practical knowledge - it means we combine the best of both: scientific evidence and real-world application.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I navigate conflicting information in fitness?</div>
+                    <div class="faq-answer">
+                        <p><strong>Focus on principles, not methods. Look for consensus, not outliers.</strong></p>
+                        <p><strong>Key principles that have strong consensus:</strong></p>
+                        <ul>
+                            <li>Progressive overload is essential for growth</li>
+                            <li>Adequate protein intake supports muscle building</li>
+                            <li>Recovery (sleep, nutrition, stress management) is crucial</li>
+                            <li>Consistency beats perfection</li>
+                            <li>Individual response varies - what works for one person may not work for another</li>
+                        </ul>
+                        <p><strong>Red flags to watch for:</strong></p>
+                        <ul>
+                            <li>Claims that sound too good to be true</li>
+                            <li>People selling products with extreme claims</li>
+                            <li>Information that contradicts established scientific consensus</li>
+                            <li>Advice that ignores individual differences</li>
+                        </ul>
+                        <p>When in doubt, stick to the fundamentals: progressive overload, adequate nutrition, proper recovery, and consistency. These principles rarely change.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Ascend Coaching</div>
+                    <p>Built by Discipline. Powered by Dedication.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Programs</h4>
+                        <ul>
+                            <li><a href="index.html#training">Beginner</a></li>
+                            <li><a href="index.html#training">Intermediate</a></li>
+                            <li><a href="index.html#training">Advanced</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="index.html#nutrition">Meal Plans</a></li>
+                            <li><a href="supplements.html">Supplements</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ascend Coaching. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
