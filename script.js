@@ -18,14 +18,25 @@ menuToggle.addEventListener('click', () => {
     }
 });
 
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-links a').forEach(link => {
+// Close mobile menu when clicking on a link (but not dropdown toggles)
+document.querySelectorAll('.nav-links a:not(.dropdown-toggle)').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
         const spans = menuToggle.querySelectorAll('span');
         spans[0].style.transform = 'none';
         spans[1].style.opacity = '1';
         spans[2].style.transform = 'none';
+    });
+});
+
+// Mobile dropdown toggle functionality
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const dropdown = toggle.closest('.nav-dropdown');
+            dropdown.classList.toggle('active');
+        }
     });
 });
 
